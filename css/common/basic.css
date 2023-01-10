@@ -337,8 +337,8 @@ body {
   padding: 0;
   color: var(--text-color-3);
   font-weight: 400;
-  font-size: 18px;
-  font-family: STKaiti;
+  font-size: 16.3px;
+  font-family: Times New Roman;
   line-height: 22px;
   letter-spacing: 0.2px;
   background: var(--background-color-1);
@@ -365,14 +365,14 @@ body::-webkit-scrollbar {
 @media (max-width: 800px) {
   html,
   body {
-    font-size: 17.28px;
+    font-size: 15.648px;
     line-height: 21.119999999999997px;
   }
 }
 @media (max-width: 500px) {
   html,
   body {
-    font-size: 16.2px;
+    font-size: 14.670000000000002px;
     line-height: 19.8px;
   }
 }
