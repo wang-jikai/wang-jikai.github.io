@@ -338,7 +338,7 @@ body {
   color: var(--text-color-3);
   font-weight: 400;
   font-size: 16.3px;
-  font-family: Times New Roman;
+  font-family: Times New Roman, STSong;
   line-height: 22px;
   letter-spacing: 0.2px;
   background: var(--background-color-1);
