@@ -2555,7 +2555,7 @@ pre .deletion {
   position: relative;
   box-sizing: border-box;
   width: 80%;
-  max-width: 1000px;
+  max-width: 1800px;
   height: 100%;
   transition-property: color, background, box-shadow, border-color, max-width, width;
   transition-delay: 0s, 0s, 0s, 0s, 0s, 0s;
@@ -2573,7 +2573,7 @@ pre .deletion {
   }
 }
 .page-container .main-content-container .main-content-body .main-content.has-toc {
-  max-width: 1200px !important;
+  max-width: 2160px !important;
 }
 .page-container .main-content-container .main-content-body .main-content-footer {
   width: 100%;
@@ -3462,7 +3462,7 @@ html.is-animating .swup-progress-icon {
   position: relative;
   height: 100%;
   width: 80%;
-  max-width: 1000px;
+  max-width: 1800px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -3470,7 +3470,7 @@ html.is-animating .swup-progress-icon {
   z-index: 1005;
 }
 .navbar-container .navbar-content.has-home-banner {
-  max-width: 1200px;
+  max-width: 2160px;
 }
 @media (max-width: 768px) {
   .navbar-container .navbar-content {
@@ -7053,7 +7053,7 @@ html.is-animating .swup-progress-icon {
   display: block;
   opacity: 1;
   transition: opacity 0.2s ease-in 0.2s;
-  width: 210px;
+  width: 10px;
 }
 .post-page-container.show-toc .toc-content-container:hover::-webkit-scrollbar-thumb {
   border: 3px solid rgba(183,183,183,0.3);
