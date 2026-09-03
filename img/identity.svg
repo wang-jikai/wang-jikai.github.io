@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="coupled-research-identity" viewBox="0 0 680 480" width="680" height="480" role="img" aria-labelledby="cri-title cri-desc" style="display:block;max-width:100%;height:auto">
+  <title id="cri-title">Risk propagation in coupled human–environment systems</title>
+  <desc id="cri-desc">Environment and climate above the human system. Human activity reshapes the economy and energy system. Emissions travel upward. Physical risk and transition risk travel downward as two parallel categories; transition risk is driven by policy. A six-node network lives inside the human system.</desc>
+  <style>
+    #coupled-research-identity {
+      --cri-paper: #FAFAF8;
+      --cri-ink: #263832;
+      --cri-secondary: #586961;
+      --cri-environment-fill: #507966;
+      --cri-environment-edge: #507966;
+      --cri-environment: #507966;
+      --cri-human-fill: #B0903A;
+      --cri-human-edge: #B0903A;
+      --cri-human: #8D7431;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      #coupled-research-identity:not([data-theme="light"]) {
+        --cri-paper: #202725;
+        --cri-ink: #EDF2EF;
+        --cri-secondary: #B4C3BB;
+        --cri-environment-fill: #507966;
+        --cri-environment-edge: #658B76;
+        --cri-environment: #A3C4AF;
+        --cri-human-fill: #B0903A;
+        --cri-human-edge: #CFB765;
+        --cri-human: #CDB574;
+      }
+    }
+    #coupled-research-identity[data-theme="dark"] {
+      --cri-paper: #202725;
+      --cri-ink: #EDF2EF;
+      --cri-secondary: #B4C3BB;
+      --cri-environment-fill: #507966;
+      --cri-environment-edge: #658B76;
+      --cri-environment: #A3C4AF;
+      --cri-human-fill: #B0903A;
+      --cri-human-edge: #CFB765;
+      --cri-human: #CDB574;
+    }
+    #coupled-research-identity .cri-block { stroke-width: 1.2; fill-opacity: .12; stroke-opacity: .45; }
+    #coupled-research-identity .cri-block-label { fill: var(--cri-ink); font-size: 25px; font-weight: 500; letter-spacing: -.4px; }
+    #coupled-research-identity .cri-label { fill: var(--cri-ink); font-size: 20px; font-weight: 400; }
+    #coupled-research-identity .cri-note { fill: var(--cri-secondary); font-size: 14px; }
+    #coupled-research-identity .cri-backplate { fill: var(--cri-paper); }
+    #coupled-research-identity .cri-flow { fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    #coupled-research-identity .cri-network-edge { fill: none; stroke: var(--cri-human); stroke-width: 1.4; opacity: .7; }
+    #coupled-research-identity .cri-network-node { fill: var(--cri-human); }
+    #coupled-research-identity .cri-human-subtitle { fill: var(--cri-ink); font-size: 18px; font-weight: 400; }
+  </style>
+
+  <!-- Every semantic region has an ID and data-region for optional click handlers. -->
+  <g id="cri-environment" data-region="environment" aria-label="Environment and climate">
+    <rect class="cri-block" x="90" y="30" width="500" height="102" rx="24" fill="var(--cri-environment-fill)" stroke="var(--cri-environment-edge)"/>
+    <g id="cri-environment-label" data-region="environment-label">
+      <text class="cri-block-label" x="340" y="90" text-anchor="middle">Environment · climate</text>
+    </g>
+  </g>
+
+  <g id="cri-emissions" data-region="emissions" aria-label="Emissions, from human to environment">
+    <path class="cri-flow" stroke="var(--cri-human)" d="M172 290V144m-6 7 6-7 6 7"/>
+    <g id="cri-emissions-label" data-region="emissions-label">
+      <rect class="cri-backplate" x="106" y="193" width="132" height="36" rx="8"/>
+      <text class="cri-label" x="172" y="218" text-anchor="middle">emissions</text>
+    </g>
+  </g>
+
+  <g id="cri-physical-risk" data-region="physical-risk" aria-label="Physical risk, from environment to human">
+    <path class="cri-flow" stroke="var(--cri-environment)" d="M349 144V290m-6-7 6 7 6-7"/>
+    <g id="cri-physical-risk-label" data-region="physical-risk-label">
+      <rect class="cri-backplate" x="277" y="193" width="144" height="36" rx="8"/>
+      <text class="cri-label" x="349" y="218" text-anchor="middle">physical risk</text>
+    </g>
+  </g>
+
+  <g id="cri-transition-risk" data-region="transition-risk" aria-label="Transition risk, from environment to human, driven by policy">
+    <path class="cri-flow" stroke="var(--cri-environment)" d="M508 144V290m-6-7 6 7 6-7"/>
+    <g id="cri-transition-risk-label" data-region="transition-risk-label">
+      <rect class="cri-backplate" x="429" y="193" width="158" height="60" rx="8"/>
+      <text class="cri-label" x="508" y="218" text-anchor="middle">transition risk</text>
+      <g id="cri-policy-note" data-region="policy-note">
+        <text class="cri-note" x="508" y="240" text-anchor="middle">driven by policy</text>
+      </g>
+    </g>
+  </g>
+
+  <g id="cri-human" data-region="human" aria-label="Human activity reshapes economy and energy, containing a six-node network">
+    <rect class="cri-block" x="90" y="302" width="500" height="122" rx="24" fill="var(--cri-human-fill)" stroke="var(--cri-human-edge)"/>
+    <g id="cri-human-label" data-region="human-label">
+      <text class="cri-block-label" x="124" y="351">Human</text>
+      <g id="cri-human-transformation" data-region="human-transformation">
+        <text class="cri-human-subtitle" x="124" y="380">reshapes economy &amp; energy</text>
+      </g>
+    </g>
+    <g id="cri-human-network" data-region="human-network" aria-label="Six interconnected nodes within the human system">
+      <path class="cri-network-edge" d="M440 332 494 330 536 367 503 398 472 366 423 369 440 332 472 366 494 330M472 366 536 367M423 369 503 398"/>
+      <circle class="cri-network-node" cx="440" cy="332" r="5"/>
+      <circle class="cri-network-node" cx="494" cy="330" r="5"/>
+      <circle class="cri-network-node" cx="423" cy="369" r="5"/>
+      <circle class="cri-network-node" cx="472" cy="366" r="6"/>
+      <circle class="cri-network-node" cx="536" cy="367" r="5"/>
+      <circle class="cri-network-node" cx="503" cy="398" r="5"/>
+    </g>
+  </g>
+
+  <g id="cri-caption" data-region="caption">
+    <rect class="cri-backplate" x="73" y="441" width="534" height="28" rx="7"/>
+    <text class="cri-note" x="340" y="460" text-anchor="middle">risk propagation in coupled human–environment systems</text>
+  </g>
+</svg>
