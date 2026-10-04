@@ -26,6 +26,16 @@
     'use strict';
 
     const recentNews = [
+
+        {
+    type: 'publication',
+    label: 'Proposal',
+    date: '2026-09-29',
+    title: 'Fragile Cooperation: Endogenizing Climate Treaty Participation with LLM-Driven Regional Agents',
+    venue: 'NeurIPS 2026 Workshop on Tackling Climate Change with Machine Learning',
+    venueUrl: 'https://www.climatechange.ai/events/neurips2026',
+    detail: 'Poster',
+},
         {
             type: 'publication',
             date: '2026-05-08',
@@ -65,7 +75,7 @@
     }
 
     function renderPublication(item, container) {
-        container.appendChild(document.createTextNode('Paper "'));
+        container.appendChild(document.createTextNode((item.label || 'Paper') + ' "'));
         container.appendChild(createLink(item.title, item.paperUrl));
         container.appendChild(document.createTextNode('" was accepted at '));
         container.appendChild(createLink(item.venue, item.venueUrl));
