@@ -54,7 +54,7 @@
        {
             type: 'general',
             date: '2026-02-20',
-            content: 'I obtained the M.E. degree of <a href="https://www.kaist.ac.kr/en/">KAIST</a>.'
+            content: 'I obtained the M.S. degree of <a href="https://www.kaist.ac.kr/en/">KAIST</a>.'
        }
     ];
 
